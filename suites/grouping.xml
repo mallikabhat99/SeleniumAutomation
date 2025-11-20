@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite" verbose="1" parallel="classes">
+
+    <groups>
+        <run>
+            <include name="s.*"/>
+        </run>
+    </groups>
+    <test name="SanityTest Chrome">
+        <classes>
+            <class name="com.mb.learning.TestNGDemo"/>
+        </classes>
+    </test>
+</suite>
